@@ -1,0 +1,118 @@
+.header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+	display: flex;
+}
+
+.link-logo {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: calc(31 / 26);
+	letter-spacing: 0.03em;
+	color: var(--hover-link-color);
+	display: inline-block;
+}
+
+.link-logo-dark {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: calc(31 / 26);
+	letter-spacing: 0.03em;
+	color: var(--header-text-color);
+}
+
+.logo-link-white {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: calc(31 / 26);
+	letter-spacing: 0.03em;
+	color: var(--first-title-color);
+}
+
+.navigation {
+	display: flex;
+}
+
+.header-list {
+	display: flex;
+	margin-left: 93px;
+	align-items: center;
+}
+
+.header-connect {
+	margin-left: auto;
+}
+
+.header-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(16 / 15);
+	letter-spacing: 0.02em;
+	color: var(--header-text-color);
+	position: relative;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after {
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: var(--hover-link-color);
+	border-radius: 2px;
+	display: block;
+	position: absolute;
+	bottom: -33px;
+}
+
+.header-link-mail {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+	color: var(--address-text-color);
+	display: flex;
+	align-items: center;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link-tel {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+	color: var(--address-text-color);
+	display: flex;
+	align-items: center;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus {
+	color: var(--hover-link-color);
+}
+
+.header-link-tel:hover,
+.header-link-tel:focus {
+	color: var(--hover-link-color);
+}
+
+.header-link-mail:hover,
+.header-link-mail:focus {
+	color: var(--hover-link-color);
+}
+
+.icon-address {
+	margin-right: 10px;
+	fill: currentColor;
+}
