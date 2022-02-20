@@ -11,3 +11,10 @@
 	--examples-boarder-color: #eeeeee;
 	--icon-static-color: #afb1b8;
 }
+
+@mixin text($fz, $fw, $lh, $ls) {
+	font-size: $fz;
+	font-weight: $fw;
+	line-height: $lh;
+	letter-spacing: $ls;
+}

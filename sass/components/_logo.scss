@@ -1,0 +1,18 @@
+.link-logo {
+	font-family: Raleway;
+	@include text(26px, 700, 1.2, 0.03em);
+	color: var(--hover-link-color);
+	display: inline-block;
+}
+
+.link-logo-dark {
+	font-family: Raleway;
+	@include text(26px, 700, 1.2, 0.03em);
+	color: var(--header-text-color);
+}
+
+.logo-link-white {
+	font-family: Raleway;
+	@include text(26px, 700, 1.2, 0.03em);
+	color: var(--first-title-color);
+}
